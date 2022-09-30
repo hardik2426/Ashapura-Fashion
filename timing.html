@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing - Ashapura Fashion </title>
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/5fac242d19.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+   
+</head>
+
+<style>
+    .ashapura {
+        width: 1000px;
+    }
+    .image-text {
+        position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    @media (max-width: 1028px) {
+        .ashapura {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .logo-img {
+        width: 150px;
+    }
+    /* Opening hours */
+    .openinghours {
+    font-family:Lucida Console;
+    border-radius:4px;
+    margin:10px;
+    box-shadow: 0 0 10px black;
+    padding:0 10px 0 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+.openinghourscontent {
+    float:left;
+}
+.openinghourscontent h2 {
+    display:block;
+    text-align:center;
+    margin-top:.33em;
+}
+.openinghourscontent button {
+    color:white;
+    font-family:Courier New;
+    font-size:large;
+    font-weight:bolder;
+    background-color:#4679BD;
+    border-radius:4px;
+    width:100%;
+    margin-bottom:10px;
+}
+.today {
+    color: #8AC007;
+}
+.opening-hours-table tr td:first-child {
+    font-weight:bold;
+}
+#open-status {
+    display:block;
+    margin-top:-1em;
+    text-align:center;
+    border:dotted lightgrey 3px;
+}
+.openorclosed:after {
+    content:" open during these hours:";
+}
+.open {
+    color:green;
+}
+.open:after {
+    content:" Open";
+    color: #6C0;
+}
+.closed:after {
+    content:" Closed";
+    color: red;
+}
+.opening-hours-table tr td {
+    padding:5px;
+}
+</style>
+
+<body>
+<!-- Navbar -->
+
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container"><a class="navbar-brand logo" href="#"><img class="logo-img" src="D:\Web development\New Ashapura Fashion\assets\img\Ashapura Fashion.png" alt=""> </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="features.html">Varieties</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<section class="clean-block clean-info dark">
+    <div class="container">
+        <div class="block-heading">
+            <h2 class="text-info">Fashion</h2>
+            <p>"Fashion is part of the daily air and it changes all the time, with all the events. You can even see the approaching of a revolution in clothes. You can see and feel everything in clothes." <strong> — Diana Vreeland</strong></p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6"><img class="img-thumbnail" src="D:\Web development\New Ashapura Fashion\assets\img\fashion ashapura picture3.jpg"></div>
+            <div class="col-md-6">
+                <!-- <h3>Lorem impsum dolor sit amet</h3>
+                <div class="getting-started-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button> -->
+                <section class="openinghours">
+                    <div class="openinghourscontent section">
+                        <div class="header">
+                             <h2>Opening hours</h2>
+                 <span id="open-status"><small class="openorclosed">We are</small></span>
+                
+                        </div>
+                        <table class="opening-hours-table">
+                            <tr id="Monday" itemprop="openingHours" title="Open Monday at 9am to 6pm">
+                                <td>Monday</td>
+                                <td class="opens">16:00</td>
+                                <td>-</td>
+                                <td class="closes">20:00</td>
+                            </tr>
+                            <tr id="Tuesday" itemprop="openingHours" title="Open Tuesday at 9am to 6pm">
+                                <td>Tuesday</td>
+                                <td class="opens">10:00</td>
+                                <td>-</td>
+                                <td class="closes">21:30</td>
+                            </tr>
+                            <tr id="Wednesday" itemprop="openingHours" title="Open Wednesday at 9am to 6pm">
+                                <td>Wednesday</td>
+                                <td class="opens">10:00</td>
+                                <td>-</td>
+                                <td class="closes">21:30</td>
+                            </tr>
+                            <tr id="Thursday" itemprop="openingHours" title="Open Thursday at 9am to 8pm">
+                                <td>Thursday</td>
+                                <td class="opens">10:00</td>
+                                <td>-</td>
+                                <td class="closes">21:30</td>
+                            </tr>
+                            <tr id="Friday" itemprop="openingHours" title="Open Friday at 9am to 6pm">
+                                <td>Friday</td>
+                                <td class="opens">10:00</td>
+                                <td>-</td>
+                                <td class="closes">21:30</td>
+                            </tr>
+                            <tr id="Saturday" itemprop="openingHours" title="Open Saturday at 10am to 6pm">
+                                <td>Saturday</td>
+                                <td class="opens">10:00</td>
+                                <td>-</td>
+                                <td class="closes">21:30</td>
+                            </tr>
+                            <tr id="Sunday" itemprop="openingHours" title="Open Sunday at 11am to 4pm">
+                                <td>Sunday</td>
+                                <td class="opens">10:00</td>
+                                <td>-</td>
+                                <td class="closes">21:30</td>
+                            </tr>
+                        </table>
+
+                        <!-- footer -->
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact-us.html">Directions</a></li>
+                        <li><a href="timing.html">Timing</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="about-us.html">Company Information</a></li>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="https://goo.gl/maps/MYosW2ttZ6DbyvaGA">Review Us On Google Maps</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <!-- <li><a href="faq.html">FAQ</a></li> -->
+                        <li><a href="https://wa.me/message/TK3UHMCS4NIBM1">Whatsapp</a></li>
+                        <li><a href="tel:9867652576">Mobile Number</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Social Media</h5>
+                    <ul>
+                        <li><a href="https://www.instagram.com/ashapurafashion22/" target="_blank" >Instagram</a></li>
+                        <li><a href="https://www.instagram.com/recess.easy/" target="_blank" >Recess by Ashapura Fashion</a></li>
+                        <li><a href="https://wa.me/message/TK3UHMCS4NIBM1" target="_blank" >Whatsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2022 Copyright Ashapura Fashion</p>
+        </div>
+    </footer>
+
+<!-- bootstrap js -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <script src="assets/js/main.js file.js"></script>
+
+</body>
+</html>
